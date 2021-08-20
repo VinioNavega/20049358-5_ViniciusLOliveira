@@ -1,10 +1,21 @@
+body {
+    background-color: rgb(221, 253, 245);
+}
+
+
+/* INDEX */
+
 .main_header {
-    width: 50%;
-    background-color: #24527a;
+    max-width: calc(1300px - 40px);
+    background-color: #fdc8fb;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: auto;
+    display: flex;
 }
 
 .main_header .main_header_content {
-    max-width: 1300px;
+    max-width: 100px;
     margin: 0 auto;
     display: flex;
     /**div flexivel*/
@@ -16,27 +27,28 @@
     padding: 20px;
     width: 290px;
     display: flex;
-    align-items: center;
-}
-
-.main_header .main_header_content .main_header_content_menu {
-    flex-basis: calc(100% - 330px);
-    /*o que sobrar ficará para o menu*/
-    display: flex;
-    justify-content: flex-end;
-    /*coloca do lado direito*/
 }
 
 .main_header_content_menu ul {
+    max-width: calc(1300px - 40px);
+    background-color: #b64d9c;
+    padding: 0 20px;
+    margin: 0 auto;
+    min-height: auto;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     /*colocando um do lado do outro*/
 }
 
 .main_header_content_menu ul li {
+    background-color: #b64d9c;
+    font-family: 'Forte', 'Times New Roman', cursive;
+    padding: 5px;
     list-style: none;
     display: flex;
-    align-items: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     /*centralizado em realação a altra do topo*/
 }
 
@@ -45,12 +57,31 @@
     display: flex;
     align-items: center;
     height: 100%;
-    color: #d36833;
+    color: #fdc8fb;
+    font-family: 'Forte', 'Times New Roman', cursive;
+    font-size: x-large;
 }
 
 .main_header_content_menu ul li a:hover {
-    background-color: #d36833;
-    color: #fff;
+    background-color: #fdc8fb;
+    color: #b64d9c;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+.main_optin {
+    max-width: calc(1300px - 40px);
+    background-color: #fdc8fb;
+    min-height: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    color: #b64d9c;
+}
+
+.main_optin .main_optin_content {
+    font-size: 0.9em
 }
 
 
@@ -65,6 +96,7 @@
     /*espaçamento entre elementos*/
     flex-wrap: wrap;
     /*quebrar o conteudo e colocar na linha de baixo*/
+    background-color: aquamarine;
 }
 
 .main_blog .main_blog_header {
@@ -73,7 +105,7 @@
 }
 
 .main_blog .main_blog_header h1 {
-    color: #333;
+    color: rgb(155, 7, 7);
     margin-bottom: 5px;
     font-size: 1.8em;
 }
@@ -117,9 +149,19 @@
 }
 
 
-/*OPTIN*/
+/* QUEM SOMOS */
 
-.main_optin {
-    background-color: #24527a;
-    min-height: auto;
+.h1-quemsomos {
+    font-family: /**'Forte', 'Times New Roman', cursive;*/
+    "Lucida Console", "Courier New", monospace;
 }
+
+.quemsomostexto {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+/* CONTATO */
+
+
+/* HOME */
