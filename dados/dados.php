@@ -5,7 +5,7 @@
 		'contato' => 'Vinicius L. Oliveira',
 		'email'=> 'viniciusnavegaoliveira@gmail.com',
 		'cep' => '88370-049',
-		'quemsomos'=>'Somos pessoas apaixonadas por doces, que esta sempre buscando sabores e combinações para surpreender você! Trabalhamos com a confecção de trufas recheadas, ovos personalizados, doces para festas, bombons recheados entre outros. Buscamos sempre atender da melhor forma possível e para isso usamos em nossos produtos ingredientes de primeira qualidade, e frutas frescas e da época, por isso nossos sabores podem variar de acordo com a estação do ano, isso é o máximo!!! Estamos felizes com a sua visita e esperamos que tenha gostado dos nossos produtos.'
+		'quemsomos'=>'Somos pessoas apaixonadas por doces, e estamos sempre buscando sabores e combinações para surpreender você! Trabalhamos com a confecção de trufas recheadas, ovos personalizados, doces para festas, bombons recheados entre outros. Buscamos sempre atender da melhor forma possível e para isso usamos em nossos produtos ingredientes de primeira qualidade, e frutas frescas e da época, por isso nossos sabores podem variar de acordo com a estação do ano, isso é o máximo!!! Estamos felizes com a sua visita e esperamos que tenha gostado dos nossos produtos.'
 	);
 
 	$produtos = array(

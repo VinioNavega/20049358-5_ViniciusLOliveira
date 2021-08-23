@@ -4,8 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<link rel="shortcut icon" href="favicon.png" />
+<head>    
 	<meta charset="UTF-8">
     <meta name="description" content="Arte&Vida Doces">
     <meta name="keywords" content="Doces, Ovos de Colher, Trufas, html">

@@ -4,8 +4,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<link rel="shortcut icon" href="favicon.png" />
+<head>	
 	<meta charset="UTF-8">
     <meta name="description" content="Arte&Vida Doces">
     <meta name="keywords" content="Doces, Ovos de Colher, Trufas, html">
@@ -26,48 +25,57 @@
     rel="stylesheet">
     
 	
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 	<header class="main_header"></header>	
 	<main>		
 		<section class="main_blog">
-			<header class="main_blog_header">
-			<img src="images\logo.png" height="100" alt="Arte&Vida" title="Arte&Vida">
-				<h1 class="h1-quemsomos">Quem Somos</h1>
+			<header class="main_blog_header">			    
+				<h1>Quem Somos</h1>
 			</header>
-			<h2 class="quemsomostexto"><?=$empresa["quemsomos"];?></h2>			
+			<h2 class="quemsomostexto"><?=$empresa["quemsomos"];?></h2>	
 			<article>
 				<header>
 					<h2>Ovos de colher</h2>
 				</header>				
-                <img src="images\OvosColher2.png" alt="Ovos de colher" title="Ovos de colher">                				
+				<div>
+                	<img src="images\OvosColher2.png" alt="Ovos de colher" title="Ovos de colher">                				
+				</div>
 			</article>
 			<article>
 				<header>
 					<h2>Bom bom recheado</h2>
-				</header>				
-                <img src="images\BomBom.png" alt="Bom bom recheado" title="Bom bom recheado">                				
+				</header>
+				<div>
+                	<img src="images\BomBom.png" alt="Bom bom recheado" title="Bom bom recheado">                				
+				</div>
 			</article>			
 			<article>
 				<header>
 					<h2>Ovos personalizados</h2>
 				</header>				
-                <img src="images\personalizado.png" alt="Ovos personalizados" title="Ovos personalizados">
+				<div>
+                	<img src="images\personalizado.png" alt="Ovos personalizados" title="Ovos personalizados">
+				</div>
 			</article>
 			<article>
 				<header>
 					<h2>Trufas recheadas</h2>
 				</header>				
-                <img src="images\trufas.png" alt="Trufas recheadas" title="Trufas recheadas">
+				<div>
+                	<img src="images\trufas.png" alt="Trufas recheadas" title="Trufas recheadas">
+				</div>
 			</article>
 			<article>
 				<header>
 					<h2>Encomendas</h2>
 				</header>				
-                <img src="images\Encomendas.png" alt="Encomendas" title="Encomendas">
+				<div>
+       	         <img src="images\Encomendas.png" alt="Encomendas" title="Encomendas">
+				</div>
 			</article>
-		</section>	
-	</main> 	 		
+			</section>						
+	</main> 	 			
 </body>
 </html>
