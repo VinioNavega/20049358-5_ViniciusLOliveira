@@ -96,7 +96,10 @@ body {
     /*espaçamento entre elementos*/
     flex-wrap: wrap;
     /*quebrar o conteudo e colocar na linha de baixo*/
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(254, 220, 255);
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
 }
 
 
