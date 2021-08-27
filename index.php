@@ -30,7 +30,7 @@
 <body>	
 	<header class="main_header">		
 		<div class="main_header_content">
-			<a href="index.php?pagina=pages/quemsomos.php" class="logo"><img src="images\logo.png" height="100" alt="Arte&Vida" title="Arte&Vida">
+			<a href="index.php?pagina=pages/home.php" class="logo"><img src="images\logo.png" height="100" alt="Arte&Vida" title="Arte&Vida">
 			</a>			
 		</div>						
 	</header>	
@@ -42,8 +42,8 @@
 		</ul>
 	</nav>
 	<main>
-		<?php
-			if(isset($_GET["pagina"]) && !empty($_GET["pagina"])){
+		<?php		    		
+			 if(isset($_GET["pagina"]) && !empty($_GET["pagina"])){
 				$pagina =$_GET["pagina"];
 				include($pagina);
 			}else{
@@ -51,14 +51,14 @@
 			}
 		?>
 	</main> 	
-	<footer>
-	<article class="main_optin">
-            <div class="main_optin_content">
-                <header>
-                    <h1><p>VINICIUS LIBORIO DE OLIVEIRA - RA:20049358-5 - CURSO SUPERIOR DE TECNOLOGIA EM SISTEMAS PARA INTERNET</p></h1>                    					
-                </header>                
+	<footer class="footerpagina">
+		<div class="rodape">
+            <div class="rodape_conteudo">               
+				<header class="cab_rodape">
+               		VINICIUS LIBORIO DE OLIVEIRA - RA:20049358-5 - CURSO SUPERIOR DE TECNOLOGIA EM SISTEMAS PARA INTERNET
+				</header>
             </div>
-        </article>		
+        </div>		
 	</footer>
 </body>
 </html>

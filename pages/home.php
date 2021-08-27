@@ -1,5 +1,6 @@
 <?php
 	include('dados\dados.php');
+  include('function\functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,46 +27,47 @@
     
 	
     <link rel="stylesheet" href="css/style.css">
+	  <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
-	<header class="main_home"></header>	
-	<main>		
-		<section class="main_blog">
-			<header class="main_blog_header">
-				<h1>Conheça nossos produtos!!</h1>
-				<h2>Todos os nossos doces são feitos com muito amor e carinho além de ingredientes de primeira qualidade.<b> Experimente!</h2>
+<body>	
+<main>		
+		<section class="main_contato">       				
+			<header class="contato_header">			    
+				<h1 class="hint_prod">Conheça os nossos produtos</h1>								
 			</header>
-			<article>
-				<header>
-					<h2>Ovos de colher</h2>
-				</header>				
-                <img src="images\OvosColher2.png" alt="Ovos de colher" title="Ovos de colher">                				
-			</article>
-			<article>
-				<header>
-					<h2>Bom bom recheado</h2>
-				</header>				
-                <img src="images\BomBom.png" alt="Bom bom recheado" title="Bom bom recheado">                				
-			</article>			
-			<article>
-				<header>
-					<h2>Ovos personalizados</h2>
-				</header>				
-                <img src="images\personalizado.png" alt="Ovos personalizados" title="Ovos personalizados">
-			</article>
-			<article>
-				<header>
-					<h2>Trufas recheadas</h2>
-				</header>				
-                <img src="images\trufas.png" alt="Trufas recheadas" title="Trufas recheadas">
-			</article>
-			<article>
-				<header>
-					<h2>Encomendas</h2>
-				</header>				
-                <img src="images\Encomendas.png" alt="Encomendas" title="Encomendas">
-			</article>
+      <div class="espaco-topo">
+
+	      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <?php              
+              HtmlDinamico("I");
+            ?>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">      
+            <?php              
+              HtmlDinamico("S");
+            ?>
+          </div>          
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div><!-- carousel slide -->
+
+      </div><!-- espaco_topo -->      
 		</section>	
 	</main> 	 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>        
 </body>
 </html>

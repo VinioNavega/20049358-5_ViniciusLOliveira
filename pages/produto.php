@@ -1,6 +1,5 @@
 <?php
 	include('dados\dados.php');
-	include('function\functions.php');
 ?>
 
 <!DOCTYPE html>
@@ -27,20 +26,38 @@
     
 	
     <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.css">		
+    <link rel="stylesheet" href="css/bootstrap.css">		
 </head>
 <body>
+    <?php
+        if (isset($_GET["id"]) && !empty($_GET["id"])) {
+            $id = $_GET["id"];
+        } else {
+            return 0;
+        }
+        foreach ($produtos as $value) {
+            if ($value["id"] == $id) {
+    ?>
 	<header class="main_header"></header>	
 	<main>		
 		<section class="main_blog">
-			<header class="main_blog_header">			    
-				<h1 class="hint_prod">Quem Somos</h1>
-			</header>
-			<h2 class="quemsomostexto"><?=$empresa["quemsomos"];?></h2>	
-			<?php				
-				HtmlDinamico("Q");
-			?>
-			</section>						
-	</main> 	 			
+			<header class="main_blog_header">			    				
+                <h1 class="hint_prod"><?=$value["title"];?></a></h1>
+			</header>			
+			<div>				            
+                <h2 class="quemsomostexto"><?=$value["description"];?></h2>				   				   
+				<div>
+                	<img class="carrosel" src=<?=$value["imagem"];?> alt=<?=$value["title"];?> title=<?=$value["title"];?>>                				
+				</div>
+                <h2><a href="index.php?pagina=pages/home.php">VOLTAR</a></h2>
+            </div>            
+		<section>                
+	</main>     
+    <?php
+	} else {
+		//
+	}
+    }
+?>	 			
 </body>
 </html>

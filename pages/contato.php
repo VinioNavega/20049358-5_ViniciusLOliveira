@@ -26,35 +26,44 @@
     
 	
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-	<header class="main_home"></header>	
 	<main>		
-		<section class="main_blog">        	
-			<article>
-			<header class="main_blog_header">			    
-				<h1>Redes Sociais!</h1>				
-			</header>						
-			<div class="redes_sociais">
-				<img src="images\LogoEmail.png" height="100" alt=<?=$empresa["email"];?> title=<?=$empresa["email"];?>>
-				<img src="images\LogoFace.png" height="100" alt="facebook" title="facebook">				
-				<img src="images\LogoInsta.png" height="100" alt="instagran" title="instagran">				
-				<img src="images\LogoTwiter.png" height="100" alt="twiter" title="twiter">				
-			</div>			
-			</article>
-		
-			<article>
-				<header>
-					<h2>Faça-nos uma visita!</h2>
-				</header>				
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.991486327761!2d-48.64740098434363!3d-26.903765299312468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc043d4c174b%3A0x564c51f89d3aa0fb!2sR.%20Joaquim%20Rodrigues%2C%2085%20-%20S%C3%A3o%20Pedro%2C%20Navegantes%20-%20SC%2C%2088370-049!5e0!3m2!1spt-BR!2sbr!4v1629683122157!5m2!1spt-BR!2sbr" 
-					width="300" 
-					height="225" 
-					style="border:0;" 
-					allowfullscreen="" 
-					loading="lazy">
-				</iframe>           				
-			</article>			
+		<section class="main_contato">       				
+			<header class="contato_header">			    
+				<h1 class="hint_prod">Redes Sociais!</h1>				
+				<table class="table_redes_sociais" width="100%">
+   					<tr>
+					   <td>
+					   <a href="#"><img src="images\LogoEmail.png" height="100" alt=<?=$empresa["email"];?> title=<?=$empresa["email"];?>>
+					   		<p><?=$empresa["email"];?></p>							</a>							   
+						</td> 					   
+						<td>
+						<a href="#"><img src="images\LogoFace.png" height="100" alt="facebook" title="facebook">
+					   		<p>@facebook</p>					</a>
+						</td>  					  
+						<td>
+						<a href="#"><img src="images\LogoInsta.png" height="100" alt="instagran" title="instagran">
+					   		<p>@instagran</p>					</a>
+						</td>
+					   <td>
+					   <a href="#"><img src="images\LogoTwiter.png" height="100" alt="twiter" title="twiter">
+					   		<p>@twiter</p>						</a>
+						</td>
+					</tr>
+				</table>
+			</header>		                        							
+			<h1 class="hint_prod">Faça-nos uma visita!</h1>
+			<iframe class="frame"
+			    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.0769576256666!2d-48.64682212696839!3d-26.901052623430235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8cc043d4c174b%3A0x564c51f89d3aa0fb!2sR.%20Joaquim%20Rodrigues%2C%2085%20-%20S%C3%A3o%20Pedro%2C%20Navegantes%20-%20SC%2C%2088370-049!5e0!3m2!1spt-BR!2sbr!4v1629851041594!5m2!1spt-BR!2sbr" 
+				width="600" 
+				height="400" 
+				style="border:0;" 
+				allowfullscreen="" 
+				loading="lazy">
+			</iframe>
+			
 		</section>	
 	</main> 	 		
 </body>
